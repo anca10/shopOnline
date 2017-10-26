@@ -9,7 +9,7 @@
   <url>http://maven.apache.org</url>
   
   <dependencies>
-
+	<!--  REST SERVICES -->
 	<dependency>
 	    <groupId>com.sun.jersey</groupId>
 	    <artifactId>jersey-core</artifactId>
@@ -26,6 +26,14 @@
 	    <groupId>com.sun.jersey</groupId>
 	    <artifactId>jersey-servlet</artifactId>
 	    <version>1.19</version>
+	</dependency>
+
+	<!-- POSTGRESQL -->
+		
+	<dependency>
+	    <groupId>postgresql</groupId>
+	    <artifactId>postgresql</artifactId>
+	    <version>9.0-801.jdbc4</version>
 	</dependency>
 
   
