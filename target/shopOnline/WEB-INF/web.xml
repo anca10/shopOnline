@@ -7,7 +7,7 @@
 
     <display-name>Shop Online</display-name>
     
-    <servlet>
+    <!-- <servlet>
 		<servlet-name>FirstServ</servlet-name>
 		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
 		<init-param>
@@ -20,8 +20,26 @@
 	<servlet-mapping>
 		<servlet-name>FirstServ</servlet-name>
 		<url-pattern>/serv/*</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
+	
+	<servlet>
+      <servlet-name>HelloWeb</servlet-name>
+      <servlet-class>
+         org.springframework.web.servlet.DispatcherServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+
+   <servlet-mapping>
+      <servlet-name>HelloWeb</servlet-name>
+      <url-pattern>/*</url-pattern>
+   </servlet-mapping>
     
+    <context-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/HelloWeb-servlet.xml</param-value>
+   </context-param>
+
 
  
 </web-app>

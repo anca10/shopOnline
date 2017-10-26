@@ -36,6 +36,12 @@
 	    <version>9.0-801.jdbc4</version>
 	</dependency>
 
+  	<!-- SPRING -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>4.3.10.RELEASE</version>
+	</dependency>
   
   </dependencies>
   
