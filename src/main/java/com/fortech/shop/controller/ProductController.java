@@ -19,7 +19,7 @@ public class ProductController {
 	@Autowired
 	ProductService productService;
 	
-	@RequestMapping(value = "/product/", method = RequestMethod.GET)
+	@RequestMapping(value = "/product", method = RequestMethod.GET)
 	public List<Product> getAllProducts(){
 		List<Product> products = productService.getAllProducts();
 		if(products.isEmpty()) return Arrays.asList(new Product(100,"Lista goala",0.0));

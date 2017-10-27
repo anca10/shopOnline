@@ -19,7 +19,7 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
-	@RequestMapping(value = "/user/", method = RequestMethod.GET)
+	@RequestMapping(value = "/user", method = RequestMethod.GET)
 	public List<User> getAllUsers(){
 		List<User> users = userService.getAllUsers();
 		if(users.isEmpty()) return Arrays.asList(new User(100,"Lista goala","No pass"));
